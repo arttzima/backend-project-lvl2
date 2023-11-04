@@ -10,24 +10,26 @@ const compare = (first, second) => {
   const onlyInSecond = _.difference(secondKeys, firstKeys);
 
   const diff = all.flatMap((key) => {
-    let item;
     if (onlyInFirst.includes(key)) {
       const value = first[key];
-      item = ` - ${key}: ${value}`;
-    } else if (onlyInSecond.includes(key)) {
+      return ` - ${key}: ${value}`;
+    }
+
+    if (onlyInSecond.includes(key)) {
       const value = second[key];
-      item = ` + ${key}: ${value}`;
-    } else if (common.includes(key)) {
+      return ` + ${key}: ${value}`;
+    }
+
+    if (common.includes(key)) {
       const value1 = first[key];
       const value2 = second[key];
       if (value1 === value2) {
-        item = `   ${key}: ${value1}`;
-      } else {
-        item = [` - ${key}: ${value1}`, ` + ${key}: ${value2}`];
+        return `   ${key}: ${value1}`;
       }
+      return [` - ${key}: ${value1}`, ` + ${key}: ${value2}`];
     }
 
-    return item;
+    return `   ${key}: ${common[key]}`;
   });
 
   const result = `{\n${diff.join('\n')}\n}`;
