@@ -19,7 +19,7 @@ const toStringValue = (obj, depth) => {
   return result;
 };
 
-const buildTree = (tree) => {
+const stylish = (tree) => {
   const iter = (node, depth) => {
     const indentSize = INDENT * depth;
     const indentSizeForKey = indentSize - BACKINDENT;
@@ -42,7 +42,7 @@ const buildTree = (tree) => {
         case 'nested':
           return `${keyIndent}  ${key}: ${iter(children, depth + 1)}`;
         default:
-          return 'wrong value';
+          return new Error('wrong value');
       }
     });
 
@@ -53,4 +53,4 @@ const buildTree = (tree) => {
   return iter(tree, 1);
 };
 
-export default buildTree;
+export default stylish;
