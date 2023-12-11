@@ -9,6 +9,11 @@
   "scripts": {
     "test": "npx jest"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "coverageProvider": "v8"
+  },
   "author": "",
   "license": "ISC",
   "type": "module",

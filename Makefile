@@ -1,8 +1,16 @@
+dependencies:
+	npm ci
+
+link:
+	npm link
+
+install: dependencies link
+
 lint:
-	      npx eslint .
+	npx eslint .
 
 test:
-				npm test
+	npm test
 
-install-deps:
-				npm ci
+test-coverage:
+	npm test -s -- --coverage
