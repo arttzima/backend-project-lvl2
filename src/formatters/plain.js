@@ -33,7 +33,7 @@ const plain = (tree) => {
         case 'nested':
           return iter(item.children, `${acc}${key}.`);
         default:
-          return new Error('wrong value');
+          throw new Error(`wrong type: ${type}`);
       }
     });
     const filterd = result.filter((item) => item !== '');

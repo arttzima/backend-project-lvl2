@@ -42,7 +42,7 @@ const stylish = (tree) => {
         case 'nested':
           return `${keyIndent}  ${key}: ${iter(children, depth + 1)}`;
         default:
-          return new Error('wrong value');
+          throw new Error(`wrong type: ${type}`);
       }
     });
 
