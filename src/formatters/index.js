@@ -11,7 +11,7 @@ const chooseFormatter = (format) => {
     case 'json':
       return toJson;
     default:
-      return stylish;
+      throw new Error(`Unexpected format: ${format}`);
   }
 };
 

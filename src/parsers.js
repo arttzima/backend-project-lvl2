@@ -9,6 +9,6 @@ export default (extension) => {
     case '.yaml':
       return yaml.load;
     default:
-      throw new Error(`Unknown format: ${extension}`);
+      throw new Error(`Unknown file's format: ${extension}`);
   }
 };

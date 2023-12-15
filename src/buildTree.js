@@ -4,7 +4,7 @@ const buildTree = (first, second) => {
   const firstKeys = Object.keys(first);
   const secondKeys = Object.keys(second);
 
-  const all = _.union(firstKeys, secondKeys).sort();
+  const all = _.sortBy(_.union(firstKeys, secondKeys));
   const deleted = _.difference(firstKeys, secondKeys);
   const added = _.difference(secondKeys, firstKeys);
 
