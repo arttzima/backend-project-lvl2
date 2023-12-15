@@ -4,9 +4,11 @@ export default (extension) => {
   switch (extension) {
     case '.json':
       return JSON.parse;
-    case '.yml' || '.yaml':
+    case '.yml':
+      return yaml.load;
+    case '.yaml':
       return yaml.load;
     default:
-      return JSON.parse;
+      throw new Error('unknown format');
   }
 };

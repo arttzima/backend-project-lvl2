@@ -4,5 +4,20 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/6c98f01a2561e07255a8/maintainability)](https://codeclimate.com/github/arttzima/backend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/6c98f01a2561e07255a8/test_coverage)](https://codeclimate.com/github/arttzima/backend-project-lvl2/test_coverage)
 
-###Demo
-[![asciicast](https://asciinema.org/a/625438.svg)](https://asciinema.org/a/625438)
+### CLI tool for building JSON, YAML difference
+
+### Demo
+[![asciicast](https://asciinema.org/a/627035.svg)](https://asciinema.org/a/627035)
+[![asciicast](https://asciinema.org/a/627040.svg)](https://asciinema.org/a/627040)
+[![asciicast](https://asciinema.org/a/627042.svg)](https://asciinema.org/a/627042)
+[![asciicast](https://asciinema.org/a/627045.svg)](https://asciinema.org/a/627045)
+[![asciicast](https://asciinema.org/a/627051.svg)](https://asciinema.org/a/627051)
+
+## Requirements
+
+- Node >= 20
+- Make >= 4
+
+## Installing
+
+Run **make install** in your terminal

@@ -14,3 +14,6 @@ test:
 
 test-coverage:
 	npm test -s -- --coverage
+
+publish:
+	npm publish --dry-run
