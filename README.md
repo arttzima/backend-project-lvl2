@@ -7,10 +7,9 @@
 ### CLI tool for building JSON, YAML difference
 
 ## Installing
-Clone the repo:  
-git clone git@github.com:arttzima/backend-project-lvl2.git  
-
-Run **make install** in your terminal
+- Clone the repo:  
+`git clone git@github.com:arttzima/backend-project-lvl2.git`  
+- Run **make install** in your terminal
 
 ## Requirements
 
