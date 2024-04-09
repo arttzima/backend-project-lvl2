@@ -1,10 +1,13 @@
+clone:
+	git clone git@github.com:arttzima/backend-project-lvl2.git
+
 dependencies:
 	npm ci
 
 link:
 	npm link
 
-install: dependencies link
+install: clone dependencies link
 
 lint:
 	npx eslint .

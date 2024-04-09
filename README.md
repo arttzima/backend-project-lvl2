@@ -6,6 +6,17 @@
 
 ### CLI tool for building JSON, YAML difference
 
+## Installing
+Clone the repo:  
+git clone git@github.com:arttzima/backend-project-lvl2.git  
+
+Run **make install** in your terminal
+
+## Requirements
+
+- Node >= 20
+- Make >= 4
+
 ### Demo
 [![asciicast](https://asciinema.org/a/627035.svg)](https://asciinema.org/a/627035)
 [![asciicast](https://asciinema.org/a/627040.svg)](https://asciinema.org/a/627040)
@@ -13,11 +24,5 @@
 [![asciicast](https://asciinema.org/a/627045.svg)](https://asciinema.org/a/627045)
 [![asciicast](https://asciinema.org/a/627051.svg)](https://asciinema.org/a/627051)
 
-## Requirements
 
-- Node >= 20
-- Make >= 4
 
-## Installing
-
-Run **make install** in your terminal

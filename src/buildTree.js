@@ -38,7 +38,7 @@ const buildTree = (first, second) => {
     }
     if (value1 === value2) {
       return {
-        type: 'dontchanged',
+        type: 'unchanged',
         key,
         value: value1,
       };

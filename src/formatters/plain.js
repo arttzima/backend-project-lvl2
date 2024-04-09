@@ -28,7 +28,7 @@ const plain = (tree) => {
           return `Property '${buildKey(key, acc)}' was added with value: ${toStringValue(value)}`;
         case 'changed':
           return `Property '${buildKey(key, acc)}' was updated. From ${toStringValue(value1)} to ${toStringValue(value2)}`;
-        case 'dontchanged':
+        case 'unchanged':
           return '';
         case 'nested':
           return iter(item.children, `${acc}${key}.`);

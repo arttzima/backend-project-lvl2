@@ -5,7 +5,6 @@ export default (extension) => {
     case '.json':
       return JSON.parse;
     case '.yml':
-      return yaml.load;
     case '.yaml':
       return yaml.load;
     default:

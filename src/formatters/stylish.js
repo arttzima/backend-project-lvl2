@@ -35,7 +35,7 @@ const stylish = (tree) => {
           return `${keyIndent}- ${key}: ${toStringValue(value, depth + 1)}`;
         case 'added':
           return `${keyIndent}+ ${key}: ${toStringValue(value, depth + 1)}`;
-        case 'dontchanged':
+        case 'unchanged':
           return `${keyIndent}  ${key}: ${toStringValue(value, depth + 1)}`;
         case 'changed':
           return [`${keyIndent}- ${key}: ${toStringValue(value1, depth + 1)}`, `${keyIndent}+ ${key}: ${toStringValue(value2, depth + 1)}`];
