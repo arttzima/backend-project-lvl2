@@ -17,11 +17,8 @@
 - Make >= 4
 
 ### Demo
-[![asciicast](https://asciinema.org/a/627035.svg)](https://asciinema.org/a/627035)
-[![asciicast](https://asciinema.org/a/627040.svg)](https://asciinema.org/a/627040)
-[![asciicast](https://asciinema.org/a/627042.svg)](https://asciinema.org/a/627042)
-[![asciicast](https://asciinema.org/a/627045.svg)](https://asciinema.org/a/627045)
-[![asciicast](https://asciinema.org/a/627051.svg)](https://asciinema.org/a/627051)
-
-
-
+[json flat diff](https://asciinema.org/a/627035)  
+[yaml flat diff](https://asciinema.org/a/627040)  
+[json recursive diff](https://asciinema.org/a/627042)  
+[json plain diff](https://asciinema.org/a/627045)  
+[diff with metadata](https://asciinema.org/a/653368)
